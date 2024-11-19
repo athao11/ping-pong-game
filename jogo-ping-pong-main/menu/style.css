@@ -1,0 +1,65 @@
+body{
+    background-color: #000000;
+}
+
+#div2{
+    width: 50vw;
+}
+p{
+    font-size: 4vh;
+    color: white;
+    transition: all 0.3s ease; 
+}
+#START{
+    width: 20vw;    
+}
+#botao{
+    width: 20vw;
+    height: 32vh;
+    color: purple;
+    font-size: 9vh;
+    transition: all 0.3s ease; 
+    text-decoration: none;
+}
+#container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+}
+#botao:hover {
+    transform: scale(2.0); 
+    color: seagreen;
+    font-size: 10vh
+}
+
+
+.particulas {
+    position: absolute;
+    background-color: orange;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: auto;
+    margin-top: 0vw;
+    z-index: -1;
+    position: absolute;
+    animation: animacao 40s infinite;
+}
+
+@keyframes animacao {
+    0%   { transform: translate(0, 0); height: 0.38vw; width: 0.38vw; } 
+    12%  { transform: translate(10px, 10px); height: 0.19vw; width: 0.19vw; } 
+    25%  { transform: translate(0, -10px); height: 0.38vw; width: 0.38vw; } 
+    50%  { transform: translate(10px, -10px); height: 0.38vw; width: 0.38vw; } 
+    75%  { transform: translate(0, 30px); height: 0.22vw; width: 0.22vw; } 
+    87%  { transform: translate(10px, 10px); height: 0.17vw; width: 0.17vw; } 
+    100% { transform: translate(0, 0); height: 0.38vw; width: 0.38vw; } 
+}
+
+
+p:hover{ 
+    font-size: 5vh;
+    transform: scale(1.05); 
+   
+}
